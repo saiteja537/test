@@ -1,0 +1,30 @@
+{
+  "Environment": "UAT",
+  "Environments": {
+    "LOCAL": {
+      "RestBaseUrl": "http://localhost:8080/biprws",
+      "CmcUrl": "http://localhost:8080/BOE/CMC"
+    },
+    "UAT": {
+      "RestBaseUrl": "https://gfsbi4newuat.capgemini.com/biprws",
+      "CmcUrl": "https://gfsbi4newuat.capgemini.com/BOE/CMC"
+    },
+    "PROD": {
+      "RestBaseUrl": "https://gfsbi4.capgemini.com/biprws",
+      "CmcUrl": "https://gfsbi4.capgemini.com/BOE/CMC"
+    }
+  },
+  "Authentication": "secWinAD",
+  "AdminUsername": "GFTEST2",
+  "PageSize": 100,
+  "RequestTimeoutSeconds": 60,
+  "ProtectedUsernames": [
+    "Administrator",
+    "Guest",
+    "SMAdmin"
+  ],
+  "RequireConfirmation": true,
+  "VerifyDeletion": true,
+  "AllowProductionDeletion": false,
+  "LogFile": ".\\user-management.log"
+}
